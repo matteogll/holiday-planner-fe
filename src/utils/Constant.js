@@ -1,0 +1,13 @@
+export const USE_MOCK_API = true;
+export const MOCK_API_URL = "https://99dc1095-1005-4d12-ad89-1ac3284bcc79.mock.pstmn.io";
+export const LOCAL_SERVER_URL = "http://localhost:8080";
+export const SERVER = USE_MOCK_API ? MOCK_API_URL : LOCAL_SERVER_URL;
+export const HOLIDAY_BASE_API = SERVER + "/holiday/";
+export const HOLIDAY_API = SERVER + "/holiday/all";
+export const RESPONSIBLE_API = SERVER + "/responsible/all"; // OK
+export const EMPLOYEE_API = SERVER + "/employee/all"; // OK
+export const BUSINESS_UNIT_API = SERVER + "/business-unit/all"; // OK
+export const HOLIDAY_ADD_API = SERVER + "/holiday/add";
+export const HOLIDAY_API_BY_ID = SERVER + "/holiday/";
+export const HOLIDAY_EDIT_API = SERVER + "/holiday/edit";
+export const DATE_FORMAT = "YYYY-MM-DD";

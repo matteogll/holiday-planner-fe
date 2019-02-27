@@ -1,0 +1,331 @@
+{
+	"info": {
+		"_postman_id": "9386eb08-01c3-4872-ba95-b45c4c43957d",
+		"name": "Holiday Planner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Business Units",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/business-unit/all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"business-unit",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Business Unit",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/business-unit/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"business-unit",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": ""
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Feb 2019 22:08:03 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a8-eH6f7zXW/epV8Ovh5IJkkw\""
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "145"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\r\n    {\r\n    \t\"name\": \"Marketing\",\r\n    \t\"description\": \"Marketing business unit\"\r\n    },\r\n    {\r\n    \t\"name\": \"Sales\",\r\n    \t\"description\": \"Sales business unit\"\r\n    }\r\n]"
+				}
+			]
+		},
+		{
+			"name": "All Responsibles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/responsible/all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"responsible",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Responsibles",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/responsible/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"responsible",
+								"all"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n{\n\t\"name\": \"Jessica Pearson\"\n},\n{\n\t\"name\": \"Harvey Specter\"\n},\n{\n\t\"name\": \"Louis Litt\"\n}\n]"
+				}
+			]
+		},
+		{
+			"name": "All Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/employee/all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"employee",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Employees",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/employee/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"employee",
+								"all"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Mike Ross\"\n    },\n    {\n        \"name\": \"Rachel Zane\"\n    },\n    {\n        \"name\": \"Donna Paulsen\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "All Holidays",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/holiday/all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"holiday",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Holidays",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/holiday/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"holiday",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": ""
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Feb 2019 23:16:43 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"83-wLFCS+fYsN8XRBWeZ8ZVLQ\""
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "84"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n\t{\n\t\t\"id\": 1,\n\t\t\"employee\": {\n\t\t\t\"name\": \"Mike Ross\"\n\t\t},\n\t\t\"start\": \"2019-02-28\",\n\t\t\"end\": \"2019-02-28\",\n\t\t\"note\": \"Vacation\",\n\t\t\"businessUnit\": {\n\t\t\t\"name\": \"Marketing\"\n\t\t},\n\t\t\"approved\": false\n\t},\n\t{\n\t\t\"id\": 2,\n\t\t\"employee\": {\n\t\t\t\"name\": \"Mike Ross\"\n\t\t},\n\t\t\"start\": \"2019-01-28\",\n\t\t\"end\": \"2019-02-28\",\n\t\t\"note\": \"Vacation\",\n\t\t\"businessUnit\": {\n\t\t\t\"name\": \"Marketing\"\n\t\t},\n\t\t\"approved\": true\n\t}\n]"
+				}
+			]
+		}
+	]
+}
