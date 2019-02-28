@@ -2,8 +2,10 @@
 
 ## CHANGELOG
 
-## 1.0.0 2019-01-06
+## 1.0.1 2019-02-28
 
-[Diff] (link not available)
+[fix] Fix some linting errors - [Diff](https://github.com/matteogll/holiday-planner-fe/compare/v1.0.0...v1.0.1)
 
-[feat][RPF-1]: first version of re-planning-fe
+## 1.0.0 2019-02-27
+
+[feat] Initial commit
