@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import { Form, Select, Input, DatePicker, Button, Card} from "antd";
+import { Form, Input, Button, Card} from "antd";
 import moment from "moment";
 
 import * as Constant from "../utils/Constant";
-
-const { Option } = Select;
 
 const style = {
     width: 500,
@@ -133,7 +131,7 @@ class EditHolidayForm extends Component {
         const approved1 = this.state.item.approvedBy1;
         const approved2 = this.state.item.approvedBy2;
         const {
-            getFieldDecorator, getFieldsError, getFieldError, isFieldTouched,
+            getFieldDecorator
         } = this.props.form;
 
 

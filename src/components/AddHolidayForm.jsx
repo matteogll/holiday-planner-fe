@@ -217,7 +217,7 @@ class AddHolidayForm extends Component {
         const responsibles = this.state.responsibles.items;
 
         const {
-            getFieldDecorator, getFieldsError, getFieldError, isFieldTouched,
+            getFieldDecorator
         } = this.props.form;
 
         const datePickerConfig = {
