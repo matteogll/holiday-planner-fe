@@ -11,17 +11,18 @@ class Header extends Component {
         return (
           <Menu
             onClick={this.handleClick}
-            mode="horizontal">
-              <Menu.Item key="holiday-planner">
+            mode="horizontal"
+            className="menu">
+              <Menu.Item key="holiday-planner" className="menu-item">
                   <Link to="/">Holiday Planner</Link>
               </Menu.Item>
-              <Menu.Item key="list">
+              <Menu.Item key="list" className="menu-item">
                   <Link to="/list">List</Link>
               </Menu.Item>
-              <Menu.Item key="add">
+              <Menu.Item key="add" className="menu-item">
                   <Link to="/add">Add</Link>
               </Menu.Item>
-              <Menu.Item key="help">
+              <Menu.Item key="help" className="menu-item">
                   <Link to="/help">Help</Link>
               </Menu.Item>
           </Menu>
