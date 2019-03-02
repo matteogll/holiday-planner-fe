@@ -7,6 +7,6 @@ describe("Header component", () => {
     it("renders Menu.Item components", () => {
         const wrapper = shallow(<Header />);
         expect(wrapper.find(".menu")).toBeDefined();
-        expect(wrapper.find(".menu-item").length).toEqual(5);
+        expect(wrapper.find(".menu-item").length).toEqual(4);
     });
 });
