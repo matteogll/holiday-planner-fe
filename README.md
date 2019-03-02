@@ -1,3 +1,5 @@
+[![CircleCI](https://img.shields.io/circleci/project/github/matteogll/holiday-planner-fe.svg)](https://circleci.com/gh/matteogll/holiday-planner-fe)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
