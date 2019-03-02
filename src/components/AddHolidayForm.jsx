@@ -187,7 +187,7 @@ class AddHolidayForm extends Component {
                 // Validate RESPONSIBLE
                 const firstResponsible = fieldsValues["first_responsible"];
                 const secondReponsible = fieldsValues["second_responsible"];
-                if(firstResponsible === secondReponsible) {
+                if(firstResponsible == secondReponsible) {
                     console.log("Second responsible must be different from First responsible");
                     Modal.error({
                         title: "Second responsible error",
