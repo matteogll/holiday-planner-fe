@@ -120,24 +120,13 @@ class AddHolidayForm extends Component {
 
     convertHolidayJSON(values) {
         return {
-            line: {
-                name: values["line"],
-            },
+            employee: values["employee"],
             start: values["start"],
             end: values["end"],
-            maintenance: values["maintenance"],
+            businessUnit: values["business-unit"],
             note: values["note"],
-            company: {
-                name: values["company"]
-            },
-            responsible1: {
-                name: values["first_responsible"]
-            },
-            responsible2: {
-                name: values["second_responsible"]
-            },
-            approvedBy1: false,
-            approvedBy2: false
+            responsible1: values["first_responsible"],
+            responsible2: values["second_responsible"]
         }
     }
 
