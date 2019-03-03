@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This projects is the React frontend for an Holiday Planner application (just an exercise).
+See the requirements of the programming exercise in the [documentation](https://github.com/matteogll/holiday-planner).
+If you don't use the backend application, just leave `USE_MOCK_API=true` in `src/utils/Constants.js` and use the Postman 
+Mock Server (`misc` folder) 
+
 ## Available Scripts
 
 In the project directory, you can run:

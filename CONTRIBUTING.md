@@ -1,9 +1,9 @@
-### Commit Message Format
+# Commit Message Format
 
 Each commit message consists of a **header** and an optional **body**, separated
 by an empty line.
 
-#### Header
+## Header
 
 Format: `[type][jira-key] subject`.
 
@@ -28,13 +28,13 @@ Format: `[type][jira-key] subject`.
 * doesn't capitalize the first letter
 * has no dot (.) at the end
 
-#### Body
+## Body
 
 Just as in the **subject**, use the imperative, present tense: "change" not
 "changed" nor "changes". The body should include the motivation for the change
 and contrast this with previous behavior.
 
-#### Example
+## Example
 
 ```
 [chore][RPA-1]: first version of re-planning-api
@@ -43,6 +43,6 @@ Add documentation, SQL initial scripts and business logic.
 ```
 
 
-### Conventions
+## Conventions
 
 Write project conventions here!
