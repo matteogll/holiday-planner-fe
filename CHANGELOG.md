@@ -1,4 +1,4 @@
-# re-planning-api
+# holiday-planner-fe
 
 ## CHANGELOG
 
