@@ -140,8 +140,8 @@ class EditHolidayForm extends Component {
             <div style={style}>
                 <h1>{"Edit Holiday Request"}</h1>
                 <Card title={"Holiday Request #" + this.getId()}>
-                    <p><b>{"Emplyee: "}</b>{i.line.name}</p>
-                    <p><b>{"Business Unit: "}</b>{i.company.name}</p>
+                    <p><b>{"Emplyee: "}</b>{i.employee.name}</p>
+                    <p><b>{"Business Unit: "}</b>{i.businessUnit.name}</p>
                     <p><b>{"Start: "}</b>{moment(i.start).format(Constant.DATE_FORMAT)}</p>
                     <p><b>{"End: "}</b>{moment(i.start).format(Constant.DATE_FORMAT)}</p>
                 </Card>
