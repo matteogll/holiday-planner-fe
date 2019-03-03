@@ -76,18 +76,16 @@ class EditHolidayForm extends Component {
 
     async postData(values) {
         const body = {
-            id: this.getId(),
             note: values["note"]
         };
         console.log("Sending to backend", body);
 
-        const rawResponse = await fetch(Constant.HOLIDAY_EDIT_API, {
-            method: 'post',
+        const rawResponse = await fetch(Constant.HOLIDAY_BASE_API + this.getId() + "/edit", {
+            method: 'put',
             headers: headers,
             body: JSON.stringify(body)
         });
-        const content = await rawResponse.json();
-        console.log("Response from backend", content);
+        console.log("Response from backend", rawResponse.status);
     }
 
     handleSubmit = (e) => {
@@ -99,29 +97,31 @@ class EditHolidayForm extends Component {
 
     async approve1() {
         const rawResponse = await fetch(Constant.HOLIDAY_BASE_API + this.getId() + "/approve1", {
-            method: 'post',
+            method: 'put',
             headers: headers
         });
-        const content = await rawResponse.json();
-        console.log("Response from backend", content);
+        console.log("Response from backend", rawResponse.status);
+        const response = await fetch(Constant.HOLIDAY_API_BY_ID + this.getId());
+        const json = await response.json();
         this.setState({
             error: null,
             isLoaded: false,
-            item: content
+            item: json
         });
     }
 
     async approve2() {
         const rawResponse = await fetch(Constant.HOLIDAY_BASE_API + this.getId() + "/approve2", {
-            method: 'post',
+            method: 'put',
             headers: headers
         });
-        const content = await rawResponse.json();
-        console.log("Response from backend", content);
+        console.log("Response from backend", rawResponse.status);
+        const response = await fetch(Constant.HOLIDAY_API_BY_ID + this.getId());
+        const json = await response.json();
         this.setState({
             error: null,
             isLoaded: false,
-            item: content
+            item: json
         });
     }
 
