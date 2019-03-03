@@ -324,6 +324,205 @@
 					],
 					"cookie": [],
 					"body": "[\n\t{\n\t\t\"id\": 1,\n\t\t\"employee\": {\n\t\t\t\"name\": \"Mike Ross\"\n\t\t},\n\t\t\"start\": \"2019-02-28\",\n\t\t\"end\": \"2019-02-28\",\n\t\t\"note\": \"Vacation\",\n\t\t\"businessUnit\": {\n\t\t\t\"name\": \"Marketing\"\n\t\t},\n\t\t\"approved\": false\n\t},\n\t{\n\t\t\"id\": 2,\n\t\t\"employee\": {\n\t\t\t\"name\": \"Mike Ross\"\n\t\t},\n\t\t\"start\": \"2019-01-28\",\n\t\t\"end\": \"2019-02-28\",\n\t\t\"note\": \"Vacation\",\n\t\t\"businessUnit\": {\n\t\t\t\"name\": \"Marketing\"\n\t\t},\n\t\t\"approved\": true\n\t}\n]"
+				},
+				{
+					"name": "Add Holiday",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/holiday/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"holiday",
+								"add"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n\t{\n\t\t\"id\": 1,\n\t\t\"employee\": {\n\t\t\t\"name\": \"Mike Ross\"\n\t\t},\n\t\t\"start\": \"2019-02-28\",\n\t\t\"end\": \"2019-02-28\",\n\t\t\"note\": \"Vacation\",\n\t\t\"businessUnit\": {\n\t\t\t\"name\": \"Marketing\"\n\t\t},\n\t\t\"approved\": false\n\t},\n\t{\n\t\t\"id\": 2,\n\t\t\"employee\": {\n\t\t\t\"name\": \"Mike Ross\"\n\t\t},\n\t\t\"start\": \"2019-01-28\",\n\t\t\"end\": \"2019-02-28\",\n\t\t\"note\": \"Vacation\",\n\t\t\"businessUnit\": {\n\t\t\t\"name\": \"Marketing\"\n\t\t},\n\t\t\"approved\": true\n\t}\n]"
+				}
+			]
+		},
+		{
+			"name": "Holiday 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/holiday/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"holiday",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Holiday 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/holiday/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"holiday",
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n\t\"id\": 1,\n\t\"employee\": {\n\t\t\"name\": \"Mike Ross\"\n\t},\n\t\"start\": \"2019-02-28\",\n\t\"end\": \"2019-02-28\",\n\t\"note\": \"Vacation\",\n\t\"businessUnit\": {\n\t\t\"name\": \"Marketing\"\n\t},\n\t\"responsible1\": {\n                \"name\": \"Jessica Pearson\",\n                \"description\": null\n            },\n    \"approvedBy1\": true,\n    \"responsible2\": {\n        \"name\": \"Harvey Specter\",\n        \"description\": null\n    },\n    \"approvedBy2\": false,\n    \"approved\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Holiday 1 Approve2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/holiday/1/approve2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"holiday",
+						"1",
+						"approve2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Holiday 1 Approve 2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/holiday/1/approve2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"holiday",
+								"1",
+								"approve2"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n\t\"id\": 1,\n\t\"employee\": {\n\t\t\"name\": \"Mike Ross\"\n\t},\n\t\"start\": \"2019-02-28\",\n\t\"end\": \"2019-02-28\",\n\t\"note\": \"Vacation\",\n\t\"businessUnit\": {\n\t\t\"name\": \"Marketing\"\n\t},\n\t\"responsible1\": {\n                \"name\": \"Jessica Pearson\",\n                \"description\": null\n            },\n    \"approvedBy1\": true,\n    \"responsible2\": {\n        \"name\": \"Harvey Specter\",\n        \"description\": null\n    },\n    \"approvedBy2\": true,\n    \"approved\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Holiday 1 Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/holiday/edit",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"holiday",
+						"edit"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Holiday 1 Edit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/holiday/edit",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"holiday",
+								"edit"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n\t\"errorCode\": 0,\n\t\"errorDescription\": \"OK\"\n}"
 				}
 			]
 		}
