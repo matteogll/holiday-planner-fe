@@ -417,7 +417,7 @@
 		{
 			"name": "Holiday 1 Approve2",
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -439,7 +439,7 @@
 				{
 					"name": "Holiday 1 Approve 2",
 					"originalRequest": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -474,19 +474,20 @@
 		{
 			"name": "Holiday 1 Edit",
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/holiday/edit",
+					"raw": "{{url}}/holiday/1/edit",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"holiday",
+						"1",
 						"edit"
 					]
 				}
@@ -495,19 +496,20 @@
 				{
 					"name": "Holiday 1 Edit",
 					"originalRequest": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/holiday/edit",
+							"raw": "{{url}}/holiday/1/edit",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"holiday",
+								"1",
 								"edit"
 							]
 						}
